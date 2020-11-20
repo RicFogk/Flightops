@@ -1,0 +1,8 @@
+{
+  "name": "Flightops",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RicFogk/Flightops.git",
+  "author": "Ricardo Fogaca <fogaca135@gmail.com>",
+  "license": "MIT"
+}
