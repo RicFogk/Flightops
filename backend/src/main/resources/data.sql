@@ -54,8 +54,8 @@ INSERT INTO TB_COSTSOLICITOR (costinfo_id, solicitor_id) VALUES (1,1);
 INSERT INTO TB_COSTSOLICITOR (costinfo_id, solicitor_id) VALUES (1,2);
 
 
-INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (aircraftinfo_id, aircraft_id) VALUES (1,1);
-INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (aircraftinfo_id, aircraft_id) VALUES (1,2);
+--INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (aircraftinfo_id, aircraft_id) VALUES (1,1);
+--INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (aircraftinfo_id, aircraft_id) VALUES (1,2);
 
 
 
