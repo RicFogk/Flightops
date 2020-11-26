@@ -37,8 +37,8 @@ INSERT INTO TB_AIRCRAFTINFO (id, acft_total_hours, acft_totallands, data, eng_va
 VALUES (2, '11:40:00', 88, '2020-01-01', 428.00, '01:35:00', 5, 1500.0, 'SBBR', 800.00, 47, 'RADIO ALT FAIL');
 
 
-INSERT INTO TB_ROLE (AUTHORITY) VALUES ('role_operator');
-INSERT INTO TB_ROLE (AUTHORITY) VALUES ('role_admin');
+INSERT INTO TB_ROLE (AUTHORITY) VALUES ('ROLE_OPERATOR');
+INSERT INTO TB_ROLE (AUTHORITY) VALUES ('ROLE_ADMIN');
 
 
 INSERT INTO TB_USER_ROLE (TB_USER_ID, TB_ROLE_ID) VALUES (1, 1);
@@ -54,8 +54,8 @@ INSERT INTO TB_COSTSOLICITOR (costinfo_id, solicitor_id) VALUES (1,1);
 INSERT INTO TB_COSTSOLICITOR (costinfo_id, solicitor_id) VALUES (1,2);
 
 
---INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (aircraftinfo_id, aircraft_id) VALUES (1,1);
---INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (aircraftinfo_id, aircraft_id) VALUES (1,2);
+--INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (tb_aircraftinfo_id, tb_aircraft_id) VALUES (1,1);
+--INSERT INTO TB_AIRCRAFTINFO_PERFLIGHT (tb_aircraftinfo_id, tb_aircraft_id) VALUES (1,2);
 
 
 
