@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/RicFogk/Flightops.git",
   "author": "Ricardo Fogaca <fogaca135@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "node-sass": "4.14.1"
+  }
 }

@@ -24,9 +24,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 	
 	private static final String[] PUBLIC = { "/oauth/token", "/h2-console/**"};
 	
-	private static final String[] OPERATOR_OR_ADMIN = {"/pilots/**", "/solicitors/**", "/aircraft/**", "/FlightPilotInfo/**", "/FlightAircraftInfo/**", "/FlightSolicitorInfo/**" }; 
+	private static final String[] OPERATOR_OR_ADMIN = {"/users/**", "/solicitors/**", "/aircraft/**", "/FlightPilotInfo/**", "/FlightAircraftInfo/**", "/FlightSolicitorInfo/**" }; 
 	
-	private static final String[] ADMIN = {"/users/**"};
+	
+	//DEPOIS ALTERAR O CAMINHO "/pilots/**" PARA 	"/users/**
+	private static final String[] ADMIN = {"/pilots/**"};
 	
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
@@ -42,6 +44,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 			http.headers().frameOptions().disable();
 		}
 		
+		
+		//Aqui é uma rota de liberacao de acesso
 		http.authorizeRequests()
 		.antMatchers(PUBLIC).permitAll()
 		.antMatchers(HttpMethod.GET, OPERATOR_OR_ADMIN).permitAll()
